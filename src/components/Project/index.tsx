@@ -1,16 +1,16 @@
 import {
-  Project as ProjectWrapper,
-  ProjectTitle,
-  ProjectStack,
-  ProjectStackTech,
   ProjectLink,
   ProjectLinks,
+  ProjectStack,
+  ProjectStackTech,
+  ProjectTitle,
+  Project as ProjectWrapper,
 } from "./style";
 
 import { Text } from "@/styles/Text";
+import { userData } from "@/utils/userData";
 import { useEffect, useState } from "react";
 import { FaGithub, FaShare } from "react-icons/fa";
-import { userData } from "@/utils/userData";
 
 interface ReposType {
   id: number;

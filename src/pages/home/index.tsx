@@ -1,12 +1,12 @@
 // Styles
+import { Button } from "@/styles/Buttons";
 import { Container, Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
-import { Button } from "@/styles/Buttons";
 
 // Components
-import { Stack } from "@/components/Stack";
-import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
+import { Project } from "@/components/Project";
+import { Stack } from "@/components/Stack";
 
 // Data
 import { stackData } from "@/utils/stackData";
@@ -17,19 +17,19 @@ import { FaGithub } from "react-icons/fa";
 // Page Style
 import {
   Header,
-  HeaderContent,
   HeaderButtonsArea,
-  UserImage,
-  StackCards,
-  ProjectsArea,
-  ProjectsAreaSocialMediaMessage,
+  HeaderContent,
   ProjectAreaWrapperColumns,
+  ProjectsArea,
   ProjectsAreaContent,
+  ProjectsAreaSocialMediaMessage,
+  StackCards,
+  UserImage,
 } from "./style";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio-sucesso`;
 
   return (
     <main id="home">
@@ -47,7 +47,7 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              I{" "}
               <Text as="span" type="heading1" color="brand1">
                 love
               </Text>{" "}
