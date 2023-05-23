@@ -45,7 +45,7 @@ export const stackData = [
   { title: "Docker", img: FaDocker },
   { title: "PostgreSQL", img: SiPostgresql },
   { title: "Git", img: FaGit },
-  { title: "Git", img: FaGithub },
+  { title: "Github", img: FaGithub },
   { title: "Python", img: FaPython },
   { title: "Sass", img: FaSass },
   { title: "Tailwind", img: SiTailwindcss },

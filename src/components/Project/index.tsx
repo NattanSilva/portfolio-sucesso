@@ -5,12 +5,12 @@ import {
   ProjectStackTech,
   ProjectTitle,
   Project as ProjectWrapper,
-} from "./style";
+} from './style';
 
-import { Text } from "@/styles/Text";
-import { userData } from "@/utils/userData";
-import { useEffect, useState } from "react";
-import { FaGithub, FaShare } from "react-icons/fa";
+import { Text } from '@/styles/Text';
+import { userData } from '@/utils/userData';
+import { useEffect, useState } from 'react';
+import { FaGithub, FaShare } from 'react-icons/fa';
 
 interface ReposType {
   id: number;
@@ -48,7 +48,7 @@ export const Project = (): JSX.Element => {
             <ProjectTitle
               as="h2"
               type="heading3"
-              css={{ marginBottom: "$3" }}
+              css={{ marginBottom: '$3' }}
               color="grey4"
             >
               {repository.name}
@@ -81,10 +81,7 @@ export const Project = (): JSX.Element => {
                 <FaGithub /> Github Code
               </ProjectLink>
               {repository.homepage && (
-                <ProjectLink
-                  target="_blank"
-                  href={`https://${repository.homepage}`}
-                >
+                <ProjectLink target="_blank" href={`${repository.homepage}`}>
                   <FaShare /> See demo
                 </ProjectLink>
               )}
